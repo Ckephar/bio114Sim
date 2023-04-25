@@ -1,5 +1,5 @@
 # bio115Sim
-This program simulates the population growth of Caminacules and Pollards in a 10x10 biome. The initial populations of both species and the Caminacule reproduction rate are entered by the user. The simulation runs for 20 generations, and the user can choose whether to display the population array and/or the coordinates of the Caminacules and Pollards in each generation.
+This program simulates the population growth of Caminacules and Pollards in a 10x10 biome. The initial populations of both species and the Caminacule reproduction rate are entered by the user. The simulation runs for user input n generations, and the user can choose whether to display the population array and/or the coordinates of the Caminacules and Pollards in each generation.
 
 The printBiome function prints the 10x10 array of occupied and unoccupied spaces in the biome. The printCoordinates function prints the (x,y) coordinates of the occupied spaces for Caminacules and Pollards separately.
 
