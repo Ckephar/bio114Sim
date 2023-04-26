@@ -32,7 +32,7 @@ int main()
     
     while(camiPopMultiply < 0)
     {
-        printf("\nEnter Caminacule Repruction rate (1-10): ");
+        printf("\nEnter Caminacule Reproduction rate (1-10): ");
         cin >> camiPopMultiply;
     }
     
@@ -76,7 +76,7 @@ int main()
 }
 
 void printBiome(bool biome[10][10], bool chosenXY[10][10]) {
-    printf("Printing location array of Camincacule locations, 1 = occupied, 0 = unoccupied, X = found\n");
+    printf("Printing location array of Caminacule locations, 1 = occupied, 0 = unoccupied, X = found\n");
     printf("   A B C D E F G H I J\n");
     for (int i = 0; i < 10; i++) {
         if(i != 9) printf(" %d ", i+1);
@@ -100,7 +100,7 @@ void printBiome(bool biome[10][10], bool chosenXY[10][10]) {
 
 
 void printCoordinates(bool biome[10][10], bool chosenXY[10][10]) {
-    printf("Printing location coordinates of Camincacule locations(x,y)\n");
+    printf("Printing location coordinates of Caminacule locations(x,y)\n");
     for (int i = 0; i < 10; i++) {
         for (int j = 0; j < 10; j++) {
             if (biome[i][j]) {
@@ -124,7 +124,7 @@ void printCoordinates(bool biome[10][10], bool chosenXY[10][10]) {
 
 void beginSim(int camiPop, int pollPop, int camiPopMultiply, int numGenerations, bool printArray, bool printLocations)
 {
-    printf("Gen: 0 Starting Camincacule Pop: %d Starting Pollard Pop: %d\n", camiPop, pollPop);
+    printf("Gen: 0 Starting Caminacule Pop: %d Starting Pollard Pop: %d\n", camiPop, pollPop);
     //For each generation 1-numGenerations
     for (int index = 0; index < numGenerations; index++)
     {
@@ -197,7 +197,7 @@ void beginSim(int camiPop, int pollPop, int camiPopMultiply, int numGenerations,
         if (pollPop < 1)
             pollPop = 1;
         
-        printf("Gen: %d Ending Camincacule Pop: %d Ending Pollard Pop: %d || found: %d\n", index+1, camiPop, pollPop, found);
+        printf("Gen: %d Ending Caminacule Pop: %d Ending Pollard Pop: %d || found: %d\n", index+1, camiPop, pollPop, found);
         if(printArray) printBiome(biome, chosenXY);
         if(printLocations) printCoordinates(biome, chosenXY);
     }  
