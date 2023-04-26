@@ -9,13 +9,13 @@ using namespace std;
 
 void printBiome(bool biome[10][10], bool chosenXY[10][10]);
 void printCoordinates(bool biome[10][10], bool chosenXY[10][10]);
-void beginSim(int camiPop, int pollPop, int camiPopMultiply, int numGenerations, bool printArray, bool printLocations);
+void beginSim(int camiPop, int pollPop, double camiPopMultiply, int numGenerations, bool printArray, bool printLocations);
 
 int main()
 {
     int camiPop = -1;
     int pollPop = -1;
-    int camiPopMultiply = -1;
+    double camiPopMultiply = -1;
     int numGenerations = -1;
     bool printArray, printLocations = false;
     while((camiPop < 1) || (camiPop > 100))
@@ -122,7 +122,7 @@ void printCoordinates(bool biome[10][10], bool chosenXY[10][10]) {
     printf("\n");
 }
 
-void beginSim(int camiPop, int pollPop, int camiPopMultiply, int numGenerations, bool printArray, bool printLocations)
+void beginSim(int camiPop, int pollPop, double camiPopMultiply, int numGenerations, bool printArray, bool printLocations)
 {
     printf("Gen: 0 Starting Caminacule Pop: %d Starting Pollard Pop: %d\n", camiPop, pollPop);
     //For each generation 1-numGenerations
