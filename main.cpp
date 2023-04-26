@@ -175,6 +175,10 @@ void beginSim(int camiPop, int pollPop, int camiPopMultiply, int numGenerations,
                 found++;
                 chosenXY[x][y] = true;
             }
+            else
+            {
+                chosenXY[x][y] = true;
+            }
         }
         
         //Need to update populations
